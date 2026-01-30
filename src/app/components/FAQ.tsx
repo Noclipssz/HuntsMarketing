@@ -11,7 +11,7 @@ const faqs = [
   },
   {
     question: 'Vocês atendem empresas de qualquer segmento?',
-    answer: 'Sim, atendemos empresas B2B de diversos segmentos em todo o Brasil. Nosso foco está em negócios que buscam não apenas vender, mas construir uma marca forte e se posicionar como referência.',
+    answer: 'Sim, atuamos com empresas de diversos segmentos e marcas que buscam crescimento estratégico. Nosso foco é fortalecer o posicionamento, ampliar a presença digital e construir autoridade no mercado de forma consistente.',
   },
   {
     question: 'Quanto tempo leva para ver resultados?',

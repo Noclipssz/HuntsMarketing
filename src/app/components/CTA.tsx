@@ -67,7 +67,7 @@ Gostaria de saber mais sobre os serviços.`;
             />
           </div>
           <input
-            type="tel"
+            type="text"
             placeholder="Seu Instagram"
             required
             value={form.whatsapp}
