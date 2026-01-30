@@ -1,6 +1,6 @@
 export function WhatsAppButton() {
   // TODO: Replace with actual WhatsApp number
-  const whatsappNumber = '5500000000000';
+  const whatsappNumber = '5541999615068';
   const message = 'Olá! Vim pelo site da Hunts e gostaria de saber mais sobre os serviços.';
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 

@@ -12,13 +12,13 @@ export function CTA() {
 
 *Nome:* ${form.name}
 *E-mail:* ${form.email}
-*WhatsApp:* ${form.whatsapp}
+*Instagram:* ${form.whatsapp}
 ${form.message ? `*Mensagem:* ${form.message}` : ''}
 
 Gostaria de saber mais sobre os serviços.`;
 
     // TODO: Replace with actual WhatsApp number
-    const whatsappNumber = '5500000000000';
+    const whatsappNumber = '5541999615068';
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
     setTimeout(() => {
@@ -68,7 +68,7 @@ Gostaria de saber mais sobre os serviços.`;
           </div>
           <input
             type="tel"
-            placeholder="Seu WhatsApp"
+            placeholder="Seu Instagram"
             required
             value={form.whatsapp}
             onChange={(e) => setForm({ ...form, whatsapp: e.target.value })}
