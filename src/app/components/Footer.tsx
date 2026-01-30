@@ -8,15 +8,13 @@ export function Footer() {
           {/* Logo & Tagline */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <svg width="32" height="32" viewBox="0 0 100 100" fill="none">
-                <circle cx="50" cy="50" r="38" stroke="#FF8C00" strokeWidth="3" fill="none" />
-                <circle cx="50" cy="50" r="22" stroke="#FF8C00" strokeWidth="2" fill="none" />
-                <circle cx="50" cy="50" r="6" fill="#FF8C00" />
-                <line x1="50" y1="8" x2="50" y2="24" stroke="#FF8C00" strokeWidth="3" />
-                <line x1="50" y1="76" x2="50" y2="92" stroke="#FF8C00" strokeWidth="3" />
-                <line x1="8" y1="50" x2="24" y2="50" stroke="#FF8C00" strokeWidth="3" />
-                <line x1="76" y1="50" x2="92" y2="50" stroke="#FF8C00" strokeWidth="3" />
-              </svg>
+              <img
+                src="/semfundopreview.png"
+                alt="Hunts Marketing"
+                width="96"
+                height="96"
+                className="object-contain"
+              />
               <div>
                 <span className="font-['Syne'] font-bold text-lg">HUNTS</span>
                 <span className="block text-[10px] tracking-[0.3em] text-zinc-500 uppercase">Marketing</span>

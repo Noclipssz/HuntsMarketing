@@ -5,25 +5,15 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 pt-20 overflow-hidden">
-      {/* Target illustration - positioned in corner as decorative element */}
-      <div className="absolute -right-32 top-1/2 -translate-y-1/2 opacity-[0.07] pointer-events-none">
-        <svg
-          width="600"
-          height="600"
-          viewBox="0 0 400 400"
-          fill="none"
-          className="animate-spin-slow"
-        >
-          <circle cx="200" cy="200" r="180" stroke="#FF8C00" strokeWidth="1" />
-          <circle cx="200" cy="200" r="140" stroke="#FF8C00" strokeWidth="1" />
-          <circle cx="200" cy="200" r="100" stroke="#FF8C00" strokeWidth="2" />
-          <circle cx="200" cy="200" r="60" stroke="#FF8C00" strokeWidth="2" />
-          <circle cx="200" cy="200" r="20" fill="#FF8C00" />
-          <line x1="200" y1="10" x2="200" y2="80" stroke="#FF8C00" strokeWidth="2" />
-          <line x1="200" y1="320" x2="200" y2="390" stroke="#FF8C00" strokeWidth="2" />
-          <line x1="10" y1="200" x2="80" y2="200" stroke="#FF8C00" strokeWidth="2" />
-          <line x1="320" y1="200" x2="390" y2="200" stroke="#FF8C00" strokeWidth="2" />
-        </svg>
+      {/* Penguin illustration - positioned in corner as decorative element */}
+      <div className="hidden md:block absolute -right-20 top-1/2 -translate-y-1/2 opacity-[0.20] pointer-events-none">
+        <img
+          src="/penguin-logo.jpeg"
+          alt=""
+          width="550"
+          height="550"
+          className="animate-float"
+        />
       </div>
 
       {/* Subtle gradient */}
