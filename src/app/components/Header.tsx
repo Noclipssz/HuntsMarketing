@@ -22,11 +22,21 @@ export function Header() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 sm:gap-3 group">
-          <img
-            src="/semfundopreview.png"
-            alt="Hunts Marketing"
-            className="w-[12vw] h-[12vw] min-w-[56px] min-h-[56px] max-w-[110px] max-h-[110px] transition-transform duration-300 group-hover:scale-110 object-contain"
-          />
+          <svg
+            width="36"
+            height="36"
+            viewBox="0 0 100 100"
+            fill="none"
+            className="transition-transform duration-300 group-hover:rotate-90"
+          >
+            <circle cx="50" cy="50" r="38" stroke="#FF8C00" strokeWidth="3" fill="none" />
+            <circle cx="50" cy="50" r="22" stroke="#FF8C00" strokeWidth="2" fill="none" />
+            <circle cx="50" cy="50" r="6" fill="#FF8C00" />
+            <line x1="50" y1="8" x2="50" y2="24" stroke="#FF8C00" strokeWidth="3" />
+            <line x1="50" y1="76" x2="50" y2="92" stroke="#FF8C00" strokeWidth="3" />
+            <line x1="8" y1="50" x2="24" y2="50" stroke="#FF8C00" strokeWidth="3" />
+            <line x1="76" y1="50" x2="92" y2="50" stroke="#FF8C00" strokeWidth="3" />
+          </svg>
           <div className="flex flex-col">
             <span className="font-['Syne'] font-bold text-[clamp(0.875rem,2.5vw,1.125rem)] tracking-tight">HUNTS</span>
             <span className="text-[clamp(7px,1.5vw,10px)] tracking-[0.2em] sm:tracking-[0.3em] text-zinc-500 uppercase">Marketing</span>

@@ -43,19 +43,23 @@ const steps = [
   },
 ];
 
+import { ScrollReveal } from './ScrollReveal';
+
 export function Process() {
   return (
     <section className="py-24 px-6 border-t border-white/5">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
-          <p className="text-[#FF8C00] text-sm font-medium tracking-[0.25em] uppercase mb-4">
-            Como Funciona
-          </p>
-          <h2 className="font-['Syne'] font-bold text-4xl md:text-5xl">
-            Nosso processo de trabalho
-          </h2>
-        </div>
+        <ScrollReveal>
+          <div className="text-center mb-16">
+            <p className="text-[#FF8C00] text-sm font-medium tracking-[0.25em] uppercase mb-4">
+              Como Funciona
+            </p>
+            <h2 className="font-['Syne'] font-bold text-4xl md:text-5xl">
+              Nosso processo de trabalho
+            </h2>
+          </div>
+        </ScrollReveal>
 
         {/* Steps */}
         <div className="relative">
@@ -64,7 +68,8 @@ export function Process() {
 
           <div className="grid md:grid-cols-4 gap-8">
             {steps.map((step, i) => (
-              <div key={i} className="relative text-center group">
+              <ScrollReveal key={i} delay={i * 150}>
+              <div className="relative text-center group">
                 {/* Number badge */}
                 <div className="relative inline-flex items-center justify-center w-20 h-20 mb-6 bg-[#09090B] border border-white/10 group-hover:border-[#FF8C00]/50 transition-colors duration-300">
                   <span className="text-[#FF8C00] font-['Syne'] font-bold text-2xl">
@@ -83,6 +88,7 @@ export function Process() {
                 <h3 className="font-['Syne'] font-semibold text-lg mb-2">{step.title}</h3>
                 <p className="text-zinc-500 text-sm leading-relaxed">{step.description}</p>
               </div>
+              </ScrollReveal>
             ))}
           </div>
         </div>

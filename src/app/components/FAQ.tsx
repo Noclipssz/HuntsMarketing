@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { ScrollReveal } from './ScrollReveal';
 
 const faqs = [
   {
@@ -30,20 +31,22 @@ export function FAQ() {
     <section className="py-24 px-6 bg-[#0C0C0E]">
       <div className="max-w-3xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
-          <p className="text-[#FF8C00] text-sm font-medium tracking-[0.25em] uppercase mb-4">
-            Dúvidas Frequentes
-          </p>
-          <h2 className="font-['Syne'] font-bold text-4xl md:text-5xl">
-            Perguntas & Respostas
-          </h2>
-        </div>
+        <ScrollReveal>
+          <div className="text-center mb-16">
+            <p className="text-[#FF8C00] text-sm font-medium tracking-[0.25em] uppercase mb-4">
+              Dúvidas Frequentes
+            </p>
+            <h2 className="font-['Syne'] font-bold text-4xl md:text-5xl">
+              Perguntas & Respostas
+            </h2>
+          </div>
+        </ScrollReveal>
 
         {/* FAQ Items */}
         <div className="space-y-4">
           {faqs.map((faq, i) => (
+            <ScrollReveal key={i} delay={i * 100}>
             <div
-              key={i}
               className="border border-white/5 overflow-hidden"
             >
               <button
@@ -77,6 +80,7 @@ export function FAQ() {
                 </div>
               </div>
             </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>

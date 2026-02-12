@@ -38,39 +38,44 @@ const services = [
   },
 ];
 
+import { ScrollReveal } from './ScrollReveal';
+
 export function Services() {
   return (
     <section className="py-24 px-6 bg-[#0C0C0E]">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
-          <p className="text-[#FF8C00] text-sm font-medium tracking-[0.25em] uppercase mb-4">
-            Nossos Serviços
-          </p>
-          <h2 className="font-['Syne'] font-bold text-4xl md:text-5xl">
-            O que fazemos por você
-          </h2>
-        </div>
+        <ScrollReveal>
+          <div className="text-center mb-16">
+            <p className="text-[#FF8C00] text-sm font-medium tracking-[0.25em] uppercase mb-4">
+              Nossos Serviços
+            </p>
+            <h2 className="font-['Syne'] font-bold text-4xl md:text-5xl">
+              O que fazemos por você
+            </h2>
+          </div>
+        </ScrollReveal>
 
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 gap-6">
           {services.map((service, i) => (
-            <div
-              key={i}
-              className="group relative p-8 bg-[#09090B] border border-white/5 hover:border-[#FF8C00]/30 transition-all duration-300"
-            >
-              {/* Icon */}
-              <div className="text-[#FF8C00] mb-6 transition-transform duration-300 group-hover:scale-110">
-                {service.icon}
+            <ScrollReveal key={i} delay={i * 100}>
+              <div
+                className="group relative p-8 bg-[#09090B] border border-white/5 hover:border-[#FF8C00]/30 transition-all duration-300 h-full"
+              >
+                {/* Icon */}
+                <div className="text-[#FF8C00] mb-6 transition-transform duration-300 group-hover:scale-110">
+                  {service.icon}
+                </div>
+
+                {/* Content */}
+                <h3 className="font-['Syne'] font-semibold text-xl mb-3">{service.title}</h3>
+                <p className="text-zinc-500 text-sm leading-relaxed">{service.description}</p>
+
+                {/* Hover indicator */}
+                <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-[#FF8C00] group-hover:w-full transition-all duration-500" />
               </div>
-
-              {/* Content */}
-              <h3 className="font-['Syne'] font-semibold text-xl mb-3">{service.title}</h3>
-              <p className="text-zinc-500 text-sm leading-relaxed">{service.description}</p>
-
-              {/* Hover indicator */}
-              <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-[#FF8C00] group-hover:w-full transition-all duration-500" />
-            </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>

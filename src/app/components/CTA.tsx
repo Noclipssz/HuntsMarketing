@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { ScrollReveal } from './ScrollReveal';
 
 export function CTA() {
   const [form, setForm] = useState({ name: '', email: '', whatsapp: '', message: '' });
@@ -32,21 +33,24 @@ Gostaria de saber mais sobre os serviços.`;
     <section id="cta" className="py-24 px-6 border-t border-white/5">
       <div className="max-w-3xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12">
-          <p className="text-[#FF8C00] text-sm font-medium tracking-[0.25em] uppercase mb-4">
-            Vamos Conversar
-          </p>
-          <h2 className="font-['Syne'] font-bold text-4xl md:text-5xl mb-4">
-            Sua marca é maior do que
-            <br />
-            <span className="text-[#FF8C00]">o mercado enxerga.</span>
-          </h2>
-          <p className="text-zinc-500 text-lg">
-            Preencha o formulário e vamos conversar no WhatsApp.
-          </p>
-        </div>
+        <ScrollReveal>
+          <div className="text-center mb-12">
+            <p className="text-[#FF8C00] text-sm font-medium tracking-[0.25em] uppercase mb-4">
+              Vamos Conversar
+            </p>
+            <h2 className="font-['Syne'] font-bold text-4xl md:text-5xl mb-4">
+              Sua marca é maior do que
+              <br />
+              <span className="text-[#FF8C00]">o mercado enxerga.</span>
+            </h2>
+            <p className="text-zinc-500 text-lg">
+              Preencha o formulário e vamos conversar no WhatsApp.
+            </p>
+          </div>
+        </ScrollReveal>
 
         {/* Form */}
+        <ScrollReveal delay={200}>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid md:grid-cols-2 gap-6">
             <input
@@ -104,6 +108,7 @@ Gostaria de saber mais sobre os serviços.`;
             )}
           </button>
         </form>
+        </ScrollReveal>
       </div>
     </section>
   );
